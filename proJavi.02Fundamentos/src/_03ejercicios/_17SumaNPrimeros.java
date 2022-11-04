@@ -12,7 +12,10 @@ public class _17SumaNPrimeros {
 		int numero = 1;
 		while(numero <= n) {
 			suma = suma + numero;
+			//suma += numero;
 			numero = numero + 1;
+			//numero += 1;
+			//numero ++;
 		}
 		System.out.println("Suma: " + suma);
 	}
