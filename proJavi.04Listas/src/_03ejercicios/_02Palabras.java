@@ -1,6 +1,6 @@
 package _03ejercicios;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class _02Palabras {
@@ -13,8 +13,31 @@ public class _02Palabras {
 		Scanner tec = new Scanner(System.in);
 		System.out.println("Frase: ");
 		String frase = tec.nextLine();
+		
 		String[] palabras = frase.split(" ");
-		System.out.println(Arrays.toString(palabras));
+
+		ArrayList<String> l = new ArrayList<>(); 
+
+		//Añadimos las palabras a una lista, solo si no estan ya
+		for (int i = 0; i < palabras.length; i++) {
+			if(!l.contains(palabras[i])) {
+				l.add(palabras[i]);
+			}
+		}
+		
+		//Mostramos las palabras
+		System.out.println("Numero de palabras: " + l.size());
+		for(String p: l) {
+			System.out.println(p);
+		}
 	}
 	
 }
+
+
+
+
+
+
+
+
