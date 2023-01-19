@@ -6,7 +6,7 @@ package _02ejemplos._01Tiempo;
  * @author jgarcia
  *
  */
-public class Tiempo {
+public class Tiempo implements Comparable<Tiempo>{
 	//Atributos (o variables de instancia)
 	private int hora;
 	private int minuto;
@@ -73,8 +73,27 @@ public class Tiempo {
 		}
 		//o bien
 		//return this.hora == t.hora && this.minuto == t.minuto && this.segundo == t.segundo;
-		
-		
+	}
+	/*
+	 * Compara los Tiempos this y t y devuelve un INT:
+	 * - negativo si this es menor que t
+	 * - positivo si this es mayor que t
+	 * - cero si this y t son iguales
+	 */
+	public int compareTo(Tiempo t) {
+		if(this.hora < t.hora) return -1;
+		else if(this.hora > t.hora) return 1;
+		else if(this.minuto < t.minuto) return -1;
+		else if(this.minuto > t.minuto) return 1;
+		else if(this.segundo < t.segundo) return -1;
+		else if(this.segundo > t.segundo) return 1;
+		else return 0;
+	}
+	//de otra forma
+	public int compareTo2(Tiempo t) {
+		if(this.hora != t.hora) return this.hora - t.hora;
+		else if(this.minuto != t.minuto) return this.minuto - t.minuto;
+		else return this.segundo - t.segundo;
 	}
 
 }
