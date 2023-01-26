@@ -50,13 +50,15 @@ public class Empleado implements Comparable<Empleado>{
 		}
 		return antig;
 	}
+	
+	
 	public int antiguedad2() {
 		return Math.max(0, Calendar.getInstance().get(Calendar.YEAR) - anyo);
 	}
 	
 	public void incrementarSueldo(double porcentaje) {
 		sueldo = sueldo + sueldo * porcentaje / 100;
-		setSueldo(getSueldo() + getSueldo() * porcentaje / 100 );
+	//	setSueldo(getSueldo() + getSueldo() * porcentaje / 100 );
 	}
 
 	@Override
