@@ -126,7 +126,8 @@ public class Vuelo {
 	}
 	public String toString() {
 		String resultado = identificador + " - " + origen + " - " + destino 
-				+ " - " + horaSalida/*.toString()*/ + " - " + horaLlegada/*.toString()*/ + "\nPasajeros:\n";
+				+ " - " + horaSalida/*.toString()*/ + " - " + horaLlegada/*.toString()*/ 
+				+ "\nPasajeros:\n";
 		for (int i = 1; i < pasaje.length; i++) {
 			if(pasaje[i] != null) {
 				resultado += "\nAsiento " + i + ": " + pasaje[i] /*.toString()*/;
