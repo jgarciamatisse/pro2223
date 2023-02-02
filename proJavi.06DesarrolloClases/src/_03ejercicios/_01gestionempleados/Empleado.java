@@ -3,10 +3,15 @@ package _03ejercicios._01gestionempleados;
 import java.util.Calendar;
 
 public class Empleado implements Comparable<Empleado>{
+	//Constante: Numero de horas de la jornada ordinaria
+	final static int HORAS_JORNADA_ORDINARIA = 40;
+	
+	
 	private String nombre;
 	private String dni;
 	private int anyo;
 	private double sueldo;
+	
 	
 	
 	public Empleado(String nombre, String dni, int anyo, double sueldo) {

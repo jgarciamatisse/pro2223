@@ -23,7 +23,30 @@ public class ListaReservas {
 	//Si la reserva ya existe, le suma el numero de ejemplares indicados como
 	// parametro
 	public void reservarAnyadiendo(String nif, String nombre, String telefono, int libro, int ejemplares) {
-		
+		Reserva r = new Reserva(nif, nombre, telefono, libro, ejemplares);
+		int posReserva = lista.indexOf(r);
+		if(posReserva != -1) {
+			//Obtenemos de la lista la reserva que es igual a r
+			Reserva rAnterior = lista.get(posReserva);
+			rAnterior.setEjemplares(rAnterior.getEjemplares() + ejemplares);
+		} else {
+			lista.add(r);
+		}
+	}
+	//Si la reserva ya existe, le suma el numero de ejemplares indicados como
+	// parametro
+	public void reservarAnyadiendo2(String nif, String nombre, String telefono, int libro, int ejemplares) {
+		Reserva r = new Reserva(nif, nombre, telefono, libro, ejemplares);
+		if(lista.contains(r)) {
+			//Modificamos en la lista la reserva que es igual a r
+			for(Reserva res: lista) {
+				if(res.equals(r)) {
+					res.setEjemplares(res.getEjemplares() + ejemplares);
+				}
+			}
+		} else {
+			lista.add(r);
+		}
 	}
 	
 	public void cancelar(String nif, int libro) throws NoSuchElementException {
@@ -51,6 +74,13 @@ public class ListaReservas {
 			}
 		}
 		return cont;
+	}
+	public void reservasLibro(int codigo) {
+		for(Reserva r : lista) {
+			if(r.getCodigo() == codigo) {
+				System.out.println(r.getNombre() + " - " + r.getTelefono());
+			}
+		}
 	}
 	
 	
