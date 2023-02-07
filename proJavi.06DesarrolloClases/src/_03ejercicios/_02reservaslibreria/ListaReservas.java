@@ -26,7 +26,7 @@ public class ListaReservas {
 		Reserva r = new Reserva(nif, nombre, telefono, libro, ejemplares);
 		int posReserva = lista.indexOf(r);
 		if(posReserva != -1) {
-			//Obtenemos de la lista la reserva que es igual a r
+			//Obtenemos de la lista la reserva throws IllegalArgumentException {que es igual a r
 			Reserva rAnterior = lista.get(posReserva);
 			rAnterior.setEjemplares(rAnterior.getEjemplares() + ejemplares);
 		} else {
