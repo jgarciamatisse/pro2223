@@ -1,14 +1,17 @@
 package _03ejercicios._05gestionhospital;
 
+import java.util.Random;
+
 public class Paciente implements Comparable<Paciente> {
 	private String nombre;
 	private int edad;
 	private int estado;
+	private static Random r = new Random(1);
 	
 	public Paciente(String n, int e){
 		this.nombre = n;
 		this.edad = e;
-		this.estado = (int)(Math.random() * 5 + 1);
+		this.estado = r.nextInt(5)  + 1;
 	}
 	
 	public int getEdad(){

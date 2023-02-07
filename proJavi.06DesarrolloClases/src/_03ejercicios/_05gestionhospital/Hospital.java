@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 import javax.naming.OperationNotSupportedException;
 
 public class Hospital {
-	private final static int MAXC = 6;
+	private final static int MAXC = 20;
 	private Paciente[] listaCamas;
 	private int numLibres;
 	

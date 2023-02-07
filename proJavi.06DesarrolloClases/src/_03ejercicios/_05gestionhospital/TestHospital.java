@@ -8,6 +8,11 @@ public class TestHospital {
 		h.ingresarPaciente("raul", 12);
 		h.ingresarPaciente("miguel", 30);
 		h.ingresarPaciente("rosa", 40);
+		h.ingresarPaciente("a", 20);
+		h.ingresarPaciente("p", 21);
+		h.ingresarPaciente("r", 12);
+		h.ingresarPaciente("m", 30);
+		h.ingresarPaciente("r", 40);
 		System.out.println(h);
 		
 		do {
