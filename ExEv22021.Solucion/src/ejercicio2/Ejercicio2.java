@@ -17,7 +17,6 @@ public class Ejercicio2 {
 			String nueva2 = tec.next();
 			cambiarContrasenya(contrasenyas, actual, nueva1, nueva2);
 		}
-
 	}
 
 	public static void cambiarContrasenya(ArrayList<String> contrasenyas, String actual, String nueva1, String nueva2) {
