@@ -4,12 +4,28 @@ public class Aula {
 	private int codigo;
 	private double longitud;
 	private double anchura;
-	
 	public Aula(int codigo, double longitud, double anchura) {
 		this.codigo = codigo;
 		this.longitud = longitud;
 		this.anchura = anchura;
-		
+	}
+	public int getCodigo() {
+		return codigo;
+	}
+	public double getLongitud() {
+		return longitud;
+	}
+	public double getAnchura() {
+		return anchura;
+	}
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+	public void setLongitud(double longitud) {
+		this.longitud = longitud;
+	}
+	public void setAnchura(double anchura) {
+		this.anchura = anchura;
 	}
 	
 	public double superficie() {
@@ -17,12 +33,16 @@ public class Aula {
 	}
 	
 	public double capacidad() {
-		return superficie()  / 1.4;
+		return superficie() / 1.4;
 	}
+	//También se podría hacer devolviendo un int
+//	public int capacidad() {
+//		return (int) (superficie() / 1.4);
+//	}
+	
 	
 	@Override
 	public String toString() {
-		return String.format("%d - %5.2f m2 - %4.1f pers." , codigo, superficie(),capacidad());
+		return codigo + " - " + superficie() + " m2 - " + capacidad() + " alu.";
 	}
-
 }
