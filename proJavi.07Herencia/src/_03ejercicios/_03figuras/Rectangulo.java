@@ -16,4 +16,12 @@ public class Rectangulo extends Figura {
 	public double perimetro() {
 		return 2 * altura  + 2 * anchura;
 	}
+	@Override
+	public boolean equals(Object o) {
+		if(this == o) return true;
+		if(! (o instanceof Rectangulo)) return false;
+		Rectangulo r = (Rectangulo) o;
+		return super.equals(r) && this.altura == r.altura 
+				&& this.anchura == r.anchura;
+	}
 }

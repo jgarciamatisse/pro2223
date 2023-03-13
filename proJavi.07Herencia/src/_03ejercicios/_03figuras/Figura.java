@@ -19,5 +19,15 @@ public abstract class Figura {
 	public String toString() {
 		return "Posicion: (" + posX + "," + posY +") -" + color + " - Area: " + area();
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(this == o) return true;
+		if(!(o instanceof Figura)) return false;
+		Figura f = (Figura) o;
+		
+		return this.posX == f.posX && this.posY == f.posY && this.color.equals(f.color);
+		
+	}
 
 }

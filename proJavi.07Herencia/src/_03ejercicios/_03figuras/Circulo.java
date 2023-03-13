@@ -14,4 +14,12 @@ public class Circulo extends Figura{
 	public double perimetro() {
 		return 2 * Math.PI * radio;
 	}
+	
+	@Override
+	public boolean equals(Object o) {
+		if(this == o) return true;
+		if(! (o instanceof Circulo)) return false;
+		Circulo c = (Circulo) o;
+		return super.equals(c) && this.radio == c.radio;
+	}
 }
