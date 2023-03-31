@@ -19,7 +19,7 @@ public class Test {
 		
 		//Si comparo un profesor con otra cosa
 		//Error de compilación porque Profesor no tiene el metodo compareTo(Alumno)
-		System.out.println(p1.compareTo(a1));
+		//System.out.println(p1.compareTo(a1));
 		
 	}
 
