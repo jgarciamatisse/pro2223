@@ -1,4 +1,4 @@
-package _07amarres;
+package _03ejercicios._07amarres;
 
 public class Barco {
 	protected String matricula;

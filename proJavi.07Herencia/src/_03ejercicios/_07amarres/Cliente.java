@@ -1,4 +1,4 @@
-package _07amarres;
+package _03ejercicios._07amarres;
 
 import java.util.Objects;
 
