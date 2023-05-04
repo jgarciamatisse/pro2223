@@ -49,7 +49,20 @@ public class _08Diccionario {
 		}
 	}
 	public static boolean quitarTraduccion (Map<String, Set<String>> d, String cast, String ing) {
-		
+		Set<String> traducciones = d.get(cast);
+		if(traducciones == null) {
+			return false;
+		} else {
+			boolean eliminado = traducciones.remove(ing);
+			if(eliminado && traducciones.size() == 0) {
+				d.remove(cast);
+			}
+			return eliminado;
+		}
+	}
+	
+	public static Set<String> traduccionesDe(Map<String, Set<String>> d, String cast) {
+		return d.get(cast);
 	}
 	
 }
