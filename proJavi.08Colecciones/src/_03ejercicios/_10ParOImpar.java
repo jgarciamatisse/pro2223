@@ -14,6 +14,7 @@ public class _10ParOImpar {
 		
 		//Mostrar por pantalla los elementos pares USANDO el método forEach() de la
 		//clase ArrayList
+		l.forEach((n)->{if(n%2 == 0) System.out.println(n);});
 		
 	}
 }
