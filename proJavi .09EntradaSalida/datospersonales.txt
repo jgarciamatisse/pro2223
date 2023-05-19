@@ -1,0 +1,9 @@
+jose rodriguez
+30
+1,89
+miguel saez
+40
+1,76
+luisa font
+33
+1,67

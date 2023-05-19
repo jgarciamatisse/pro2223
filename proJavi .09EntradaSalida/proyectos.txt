@@ -1,0 +1,14 @@
+/home/jgarcia/git/pro2223/proJavi.04Listas
+/home/jgarcia/git/pro2223/proJavi.04Arrays
+/home/jgarcia/git/pro2223/proJavi.03Fundamentos
+/home/jgarcia/git/pro2223/proJavi.09ManejoFicherosyCarpetas
+/home/jgarcia/git/pro2223/proJavi.01Introducion
+/home/jgarcia/git/pro2223/ExEv22021.Solucion
+/home/jgarcia/git/pro2223/Ex2Ev.Solucion
+/home/jgarcia/git/pro2223/ExEv12021.Solucion
+/home/jgarcia/git/pro2223/proJavi.06DesarrolloClases
+/home/jgarcia/git/pro2223/proJavi.05Excepciones
+/home/jgarcia/git/pro2223/proJavi.04Matrices
+/home/jgarcia/git/pro2223/proJavi.02Fundamentos
+/home/jgarcia/git/pro2223/proJavi.07Herencia
+/home/jgarcia/git/pro2223/proJavi.08Colecciones
