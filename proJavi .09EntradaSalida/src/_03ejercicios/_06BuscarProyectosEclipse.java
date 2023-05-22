@@ -1,4 +1,4 @@
-package _02ejemplos._03ejercicios;
+package _03ejercicios;
 
 import java.io.File;
 import java.io.FileNotFoundException;

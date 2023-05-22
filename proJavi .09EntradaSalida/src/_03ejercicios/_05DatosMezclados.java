@@ -1,4 +1,4 @@
-package _02ejemplos._03ejercicios;
+package _03ejercicios;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,6 +13,8 @@ public class _05DatosMezclados {
 				if(f.hasNextInt()) {
 					suma += f.nextInt();
 					cont ++;
+				} else {
+					f.next();
 				}
 			}
 			System.out.println("Media: " + (double) suma / cont);
