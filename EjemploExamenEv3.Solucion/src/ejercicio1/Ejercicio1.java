@@ -49,10 +49,10 @@ public class Ejercicio1 {
 	}
 
 	private static void mostrarGanador(Map<String, Integer> puntos) {
-		int puntosGanador = -1;
+		Integer puntosGanador = -1;
 		String ganador = "";
 		for (String equipo : puntos.keySet()) {
-			int n = puntos.get(equipo);
+			Integer n = puntos.get(equipo);
 			if (n > puntosGanador) {
 				puntosGanador = n;
 				ganador = equipo;

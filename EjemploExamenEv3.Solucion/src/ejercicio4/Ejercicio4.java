@@ -31,8 +31,11 @@ public class Ejercicio4 {
 		}
 		if(l.isEmpty()) return true;
 		else return false;
-		
-		
+	}
+	private static boolean mismasPalabras2(String[] palabrasFrase1, String[] palabrasFrase2) {
+			Arrays.sort(palabrasFrase1);
+			Arrays.sort(palabrasFrase2);
+			return palabrasFrase1.equals(palabrasFrase2);
 	}
 
 }

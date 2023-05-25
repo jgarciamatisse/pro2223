@@ -3,7 +3,8 @@ package ejercicio2;
 public class ContratoMovil extends Contrato {
 	private int minutosGratis;
 	private int gbDatos;
-	public ContratoMovil(String titular, String lineaPrincipal, int precioMinuto, int permanencia, int minutosGratis,
+	public ContratoMovil(String titular, String lineaPrincipal, int precioMinuto, int permanencia, 
+			int minutosGratis,
 			int gbDatos) {
 		super(titular, lineaPrincipal, precioMinuto, permanencia);
 		this.minutosGratis = minutosGratis;
