@@ -1,0 +1,1 @@
+haz un programa en el que intervengan distintos tipos de variables numericas

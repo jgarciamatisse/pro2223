@@ -1,0 +1,8 @@
+Luis Gomez Torrijos
+6	7,30	1
+Andres Beltran Lionel
+4,2		8,22	10
+Manuela Gutierrez Tortajada
+9,3		8,3		0
+Rafael Garcia Beltran
+1		1		30
